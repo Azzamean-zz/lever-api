@@ -1,0 +1,37 @@
+.jobs-container {
+    font-family: 'Roboto';
+    color: #444;
+  }
+  
+  .jobs-container h2 {
+    color: #444;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 7px;
+  }
+  
+  .job {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+  
+  .job-department {
+    margin: 15px 0 5px 0;
+    font-size: 20px;
+  }
+  
+  .job-title {
+    font-size: 16px;
+    text-decoration: none;
+    color: #8cc63f;
+    transition: color .3s;
+    -webkit-transition: color .3s;
+  }
+  
+  .job-title:hover {
+    color: #444;
+  }
