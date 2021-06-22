@@ -2,7 +2,7 @@ jQuery(document).ready(($) => {
 
     // REPLACE "LEVERDEMO" WITH YOUR COMPANY NAME BELOW
 
-    url = 'https://api.lever.co/v0/postings/vaxcyte?mode=json&group=department'
+    url = 'https://api.lever.co/v0/postings/LEVERDEMO?mode=json&group=department'
 
     //Setting up the structure for each job posting
     function createJobs(_data) {
