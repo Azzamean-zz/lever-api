@@ -2,7 +2,7 @@ jQuery(document).ready(($) => {
 
     // REPLACE "LEVERDEMO" WITH YOUR COMPANY NAME BELOW
 
-    url = 'https://api.lever.co/v0/postings/LEVERDEMO?mode=json&group=department'
+    url = 'https://api.lever.co/v0/postings/LEVERDEMO?mode=json&group=team';
 
     //Setting up the structure for each job posting
     function createJobs(_data) {
@@ -20,16 +20,16 @@ jQuery(document).ready(($) => {
 
         for (i = 0; i < _data.length; i++) {
             let posting = _data[i];
-            let department = _data[i].title || 'Others';
+            let title = _data[i].title || 'Others';
             $('#jobs-container .jobs-list').append(
-                '<h3 class="job-department">' + department + '</>'
+                '<h3 class="job-title">' + title + '</h3>'
             );
             for (let j = 0; j < posting.postings.length; j++) {
                 let jobText = posting.postings[j].text;
                 let jobLink = posting.postings[j].hostedUrl + leverParameter;
                 $('#jobs-container .jobs-list').append(
                     '<div class="job">' +
-                    '<a class="job-title" target="_blank" href="' + jobLink + '"">' + jobText + '</a>' +
+                    '<a class="job-title-link" target="_blank" href="' + jobLink + '"">' + jobText + '</a>' +
                     '</div>'
                 );
             }
